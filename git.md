@@ -64,7 +64,10 @@
 
 |Command|Use case|Description|
 |---|---|---|---|
-|status
+|git status|shows changes in the working tree||
+|git status -s/--short|output in a short form||
+|git status -b/--branch|show local and remote branch info||
+
 |diff
 |log
 |grep
