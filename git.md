@@ -23,8 +23,8 @@
 
 |Command|Use case|Description|
 |---|---|---|---|
-|init|
-|clone|
+|git init|create an empty git repository||
+|git clone {repository url}|clone a repo into a new directory|
 
 **Manage Changes**
 
@@ -80,4 +80,3 @@
 |Command|Use case|Description|
 |---|---|---|---|
 |git config credential.helper store<br>git pull/push|How to save username and password in git|After you do pull or push and enter your credentials they will be stored in git. To update just do the same again.|
-|||||
