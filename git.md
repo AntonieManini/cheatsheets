@@ -30,7 +30,12 @@
 
 |Command|Use case|Description|
 |---|---|---|---|
-|add
+|git add {path}|add new or modified files from the path to the index|path='.' - everything, '/**.cpp' - only files with cpp extension|
+|git add -n/--dry-run [{path}]|don’t actually do anything, just show what would be done||
+|git add -i/--interactive [{path}]|interactively add files to the index||
+|git add -p/--patch [{path}]|add chunks of code to the index interactively||
+|git add -u/--update [{path}]|update previously staged files||
+|git add -A/--all [{path}]|add all files from the path or from the whole working tree||
 |commit
 |reset
 |stash
@@ -80,3 +85,5 @@
 |Command|Use case|Description|
 |---|---|---|---|
 |git config credential.helper store<br>git pull/push|How to save username and password in git|After you do pull or push and enter your credentials they will be stored in git. To update just do the same again.|
+|git clean -df|delete untracked files (-f/--force) and remove untracked directories in addition to untracked files (-d)||
+|git clean -df<br>git checkout -- .|discard unstaged changes|untracked files and folders will be also removed|
