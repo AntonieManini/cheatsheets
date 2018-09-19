@@ -1,7 +1,6 @@
 # Git commands
 
 **Setup and Config**
-
 |Command|Use case|Description|
 |---|---|---|
 |git help||lists mostly used git commands|
@@ -17,17 +16,17 @@
 |git config --global core.editor {command to call your editor}|set a default editor|example: git config --global core.editor /usr/bin/vim|
 |git config -e/--edit [--global/--local]|edit a config file with a default editor|||
 
-
+<br><br><br>
 
 **Init and Clone Project**
-
 |Command|Use case|Description|
 |---|---|---|
 |git init|create an empty git repository||
 |git clone {repository url}|clone a repo into a new directory|||
 
-**Manage Changes**
+<br><br><br>
 
+**Manage Changes**
 |Command|Use case|Description|
 |---|---|---|
 |git add {path}|add new or modified files from the path to the index|path='.' - everything, '/**.cpp' - only files with cpp extension|
@@ -42,8 +41,9 @@
 |clean|||
 |git rm -f/--force -r -n/--dry-run --cached {files}|remove files from index and working directory|-f -> ignore local modifications, -r -> remove directory recursively, -n -> just show what will be done, --cached -> remove from index but keep file on disk, after you commit changes file will be marked as untracked||
 
-**Branching and Merging**
+<br><br><br>
 
+**Branching and Merging**
 |Command|Use case|Description|
 |---|---|---|
 |git branch {branch}|create new branch||
@@ -61,16 +61,18 @@
 |mergetool|||
 |tag||||
 
-**Sharing and Updating Projects**
+<br><br><br>
 
+**Sharing and Updating Projects**
 |Command|Use case|Description|
 |---|---|---|
 |pull|||
 |push|||
 |fetch|||
 
-**Inspection and Comparison**
+<br><br><br>
 
+**Inspection and Comparison**
 |Command|Use case|Description|
 |---|---|---|
 |git status|shows changes in the working tree||
@@ -80,8 +82,9 @@
 |log|||
 |grep||||
 
-**Manage commits tree**
+<br><br><br>
 
+**Manage commits tree**
 |Command|Use case|Description|
 |---|---|---|
 |revert|||
@@ -91,8 +94,9 @@
 |reflog|||
 |gc|||
 
-**Advanced Use Cases**
+<br><br><br>
 
+**Advanced Use Cases**
 |Command|Use case|Description|
 |---|---|---|
 |git config credential.helper store<br>git pull/push|How to save username and password in git|After you do pull or push and enter your credentials they will be stored in git. To update just do the same again.|
