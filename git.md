@@ -40,13 +40,22 @@
 |reset
 |stash
 |clean
-|rm
+|git rm -f/--force -r -n/--dry-run --cached {files}|remove files from index and working directory|-f -> ignore local modifications, -r -> remove directory recursively, -n -> just show what will be done, --cached -> remove from index but keep file on disk, after you commit changes file will be marked as untracked|
 
 **Branching and Merging**
 
 |Command|Use case|Description|
 |---|---|---|---|
-|branch
+|git branch {branch}|create new branch||
+|git branch {branch} {remote branch}|create branch and set to track remote branch||
+|git branch -a/--all|show all local and remote branches||
+|git branch -m/--move {oldbranch} {newbranch}|rename branch|-M == --move --force|
+|git branch -d/--delete {branch}|delete branch|-D == --delete --force|
+|git branch -dr origin/{branch}|remove local reference to remote branch||
+|git branch -c/--copy {branch}|copy branch and reflog|-C == --copy --force|
+|git branch -v/-vv|show sha1 and commit subject line for each head, along with relationship to upstream branch (if any)|-v == --verbose|
+|git branch -u {upstream}/--set-upstream-to={upstream}|set remote tracking branch to current branch||
+|git branch --unset-upstream|unset upstream tracking branch information||
 |checkout
 |merge
 |mergetool
@@ -90,3 +99,4 @@
 |git config credential.helper store<br>git pull/push|How to save username and password in git|After you do pull or push and enter your credentials they will be stored in git. To update just do the same again.|
 |git clean -df|delete untracked files (-f/--force) and remove untracked directories in addition to untracked files (-d)||
 |git clean -df<br>git checkout -- .|discard unstaged changes|untracked files and folders will be also removed|
+||delete local and remote branch||
