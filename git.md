@@ -1,6 +1,7 @@
 # Git commands
 
 **Setup and Config**
+
 |Command|Use case|Description|
 |---|---|---|
 |git help||lists mostly used git commands|
@@ -19,6 +20,7 @@
 <br><br><br>
 
 **Init and Clone Project**
+
 |Command|Use case|Description|
 |---|---|---|
 |git init|create an empty git repository||
@@ -27,6 +29,7 @@
 <br><br><br>
 
 **Manage Changes**
+
 |Command|Use case|Description|
 |---|---|---|
 |git add {path}|add new or modified files from the path to the index|path='.' - everything, '/**.cpp' - only files with cpp extension|
@@ -44,6 +47,7 @@
 <br><br><br>
 
 **Branching and Merging**
+
 |Command|Use case|Description|
 |---|---|---|
 |git branch {branch}|create new branch||
@@ -64,6 +68,7 @@
 <br><br><br>
 
 **Sharing and Updating Projects**
+
 |Command|Use case|Description|
 |---|---|---|
 |pull|||
@@ -73,6 +78,7 @@
 <br><br><br>
 
 **Inspection and Comparison**
+
 |Command|Use case|Description|
 |---|---|---|
 |git status|shows changes in the working tree||
@@ -85,6 +91,7 @@
 <br><br><br>
 
 **Manage commits tree**
+
 |Command|Use case|Description|
 |---|---|---|
 |revert|||
@@ -97,6 +104,7 @@
 <br><br><br>
 
 **Advanced Use Cases**
+
 |Command|Use case|Description|
 |---|---|---|
 |git config credential.helper store<br>git pull/push|How to save username and password in git|After you do pull or push and enter your credentials they will be stored in git. To update just do the same again.|
