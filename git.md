@@ -52,6 +52,7 @@
 |---|---|---|
 |git branch {branch}|create new branch||
 |git branch {branch} {remote branch}|create branch and set to track remote branch||
+|git branch {branch} -t/--track {remote}/{branch}|create new branch and set it to track remote one||
 |git branch -a/--all|show all local and remote branches||
 |git branch -m/--move {oldbranch} {newbranch}|rename branch|-M == --move --force|
 |git branch -d/--delete {branch}|delete branch|-D == --delete --force|
