@@ -99,7 +99,8 @@
 |cherry-pick|||
 |apply|||
 |reflog|||
-|gc|||
+|git gc|cleanup unnecessary files and optimize the local repository||
+|git gc --aggressive|more aggressive optimization, takes more time||
 
 <br><br><br>
 
