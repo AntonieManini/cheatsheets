@@ -71,7 +71,14 @@
 |git checkout --orphan {branch}|create branch from init state|git allows you to track multiple independent projects as different branches in a single repository|
 |merge|||
 |mergetool|||
-|tag||||
+|git tag|lists all existing tags||
+|git tag {tag}|add a tag to the current commit|creates a lightweight tag (default) -> pointer to commit|
+|git tag -a -m "{message}" {tag}|create an annotated tag|creates a tag object, which has extra information (author, date, message (release notes/changelog) etc.) and reference to commit. important for public releases.|
+|git tag --create-reflog {tag}|creates a tag history entry(reflog entry)||
+|git tag -f/--force {tag}|re-tag when you tagged a wrong commit||
+|git tag -d/--delete {tag}|delete a given tag||
+|git tag -l/--list {regex pattern}|show tags matching pattern||
+|git tag -l -n|list all tags including messages, commit message if no tag msg exists||
 
 <br><br><br>
 
@@ -81,6 +88,8 @@
 |---|---|---|
 |pull|||
 |push|||
+|git push --tags|push all tags to remote repo||
+|git push origin {tag}|push specified/given tag to remote repo||
 |fetch|||
 
 <br><br><br>
@@ -95,6 +104,8 @@
 |diff|||
 |log|||
 |grep||||
+|show|||
+|git show {tag}|shows information about a tag|
 
 <br><br><br>
 
@@ -121,3 +132,5 @@
 |git clean -df<br>git checkout -- .|discard unstaged changes|untracked files and folders will be also removed|
 ||delete local and remote branch|||
 ||push tags to remote||
+||change existing tag local and remote||
+|git rev-parse {tag}|check to which commit points the tag||
