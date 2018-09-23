@@ -46,7 +46,14 @@
 |git commit {file}|commit changes of given file|file should be staged, other files in index will stay staged for next commit|
 |reset|||
 |stash|||
-|clean|||
+|git clean|remove untracked files|works only if the configuration variable clean.requireForce set to false|
+|git clean {file}|remove given untracked file||
+|git clean -f|remove untracked files with force|you need this param when clean.requireForce is set to true(default)|
+|git clean -d|remove untracked directories in addition to untracked files||
+|git clean -i/--interactive|remove untracked files interactively||
+|git clean -e {pattern}/--exclude={pattern}|exclude files according to pattern||
+|git clean -x|remove also files specified in .gitignore||
+|git clean -X|remove only ignored files||
 |git rm -f/--force -r -n/--dry-run --cached {files}|remove files from index and working directory|-f -> ignore local modifications, -r -> remove directory recursively, -n -> just show what will be done, --cached -> remove from index but keep file on disk, after you commit changes file will be marked as untracked||
 
 <br><br><br>
