@@ -116,8 +116,7 @@
 |diff|||
 |log|||
 |grep||||
-|show|||
-|git show {tag}|shows information about a tag|
+|git show {object}|shows information about an object (tag, commit, branch, etc.)|
 
 <br><br><br>
 
@@ -146,3 +145,4 @@
 ||push tags to remote||
 ||change existing tag local and remote||
 |git rev-parse {tag}|check to which commit points the tag||
+||create and apply patch||
