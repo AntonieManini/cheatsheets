@@ -38,7 +38,12 @@
 |git add -p/--patch [{path}]|add chunks of code to the index interactively||
 |git add -u/--update [{path}]|update previously staged files||
 |git add -A/--all [{path}]|add all files from the path or from the whole working tree||
-|commit|||
+|git commit -am "{message}"|add all changes to index and commit|only modified and deleted files are staged to commit, new files are not affected|
+|git commit -p/--patch|commit change hunks interactively||
+|git commit --interactive|commit files interactively||
+|git commit --amend|fix the commit message of the last commit||
+|git commit --status|adds an output of 'git status' command to the commit message template||
+|git commit {file}|commit changes of given file|file should be staged, other files in index will stay staged for next commit|
 |reset|||
 |stash|||
 |clean|||
