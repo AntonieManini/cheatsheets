@@ -45,7 +45,9 @@
 |git commit --status|adds an output of 'git status' command to the commit message template||
 |git commit {file}|commit changes of given file|file should be staged, other files in index will stay staged for next commit|
 |reset|||
-|stash|||
+|git stash|save modifications and revert to match HEAD commit|is equivalent to git stash push|
+|git stash list|list all stashes||
+|git stash show stash@{N}|show changes for given stash. N is the stash index.||
 |git clean|remove untracked files|works only if the configuration variable clean.requireForce set to false|
 |git clean {file}|remove given untracked file||
 |git clean -f|remove untracked files with force|you need this param when clean.requireForce is set to true(default)|
@@ -146,3 +148,4 @@
 ||change existing tag local and remote||
 |git rev-parse {tag}|check to which commit points the tag||
 ||create and apply patch||
+|git fsck --unreachable \| grep commit \| cut -d\  -f3 \| xargs git log --merges --no-walk --grep=WIP||
