@@ -47,7 +47,13 @@
 |reset|||
 |git stash|save modifications and revert to match HEAD commit|is equivalent to git stash push|
 |git stash list|list all stashes||
+|git stash clear|remove all stashes||
 |git stash show stash@{N}|show changes for given stash. N is the stash index.||
+|git stash drop {stashId}?|drops the top or given stash||
+|git stash pop|apply stash and remove it from stash list||
+|git stash apply|apply stash but keep it in the stash list||
+|git stash --keep-index|stash not staged changes||
+|git stash --include-untracked|stash changes and untracked files||
 |git clean|remove untracked files|works only if the configuration variable clean.requireForce set to false|
 |git clean {file}|remove given untracked file||
 |git clean -f|remove untracked files with force|you need this param when clean.requireForce is set to true(default)|
