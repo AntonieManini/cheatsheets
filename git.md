@@ -148,4 +148,4 @@
 ||change existing tag local and remote||
 |git rev-parse {tag}|check to which commit points the tag||
 ||create and apply patch||
-|git fsck --unreachable \| grep commit \| cut -d\  -f3 \| xargs git log --merges --no-walk --grep=WIP||
+|git fsck --unreachable \| grep commit \| cut -d\  -f3 \| xargs git log --merges --no-walk --grep=WIP<br>git stash apply {hash}|list dropped/cleared/removed stashes||
