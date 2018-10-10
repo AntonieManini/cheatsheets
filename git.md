@@ -6,7 +6,7 @@
 |---|---|---|
 |git help||lists mostly used git commands|
 |git help {command}/{concept}|get info about git command|to get list of concepts type git |
-|git help -g|||
+|git help -g/--guides|useful guides and tutorials||
 |git help -a/--all|get all available git commands||
 |git config {key}|get value of config variable|'~/.gitconfig' User-specific configuration file. Also called "global" configuration file. '$GIT_DIR/config' Repository specific configuration file.|
 |git config {key} {value}|set, define config variable||
